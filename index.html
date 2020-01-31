@@ -7,45 +7,46 @@
 	<title>Postfolio</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:500,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kalam:700|Satisfy&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
+	<script src="js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
 </head>
 <body>
-
-	<!--<header>
-		<nav id="navbar">
-			<a class="nav-link" href="#About">About</a>
-			<a class="nav-link" href="#Work">Work</a>
-			<a class="nav-link" href="#Contact">Contact</a>
+	<header id="intro">
+		<nav class="navbar fixed-top" id="nave">
+			<a class="nav-link" href="#About">Home</a>
+			<a class="nav-link" href="#Abu Dhabi">Abu Dhabi</a>
+			<a class="nav-link" href="#Maldives">Maldives</a>
 		</nav>
 
-	</header>-->
 
-	<main id="intro">
 		<div class="overlay">
-			<h1>WELCOME HERE</h1>
-			<p>This page was created to show some of my job
-			<p>and I hope you enjoy it!</p>
+			<h1>Maldives & Abu Dhabi</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			Deleniti consequuntur.</p>
 		</div>
-	</main>
+	</header>
 
 	<div class="container">
 
 		<!--Introduction-->
-		<div id="introduction">
+		<section id="introduction">
 			<h2>Abu Dhabi & Maldives</h2>
 
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate hic provident nulla repellat facere esse molestiae ipsa labore porro minima quam quaerat rem, natus repudiandae debitis est sit pariatur</p>
-		</div>
+		</section>
+		<hr class="division">
+
 		<!--End Introduction-->
-		<hr>
+
 		<!-- Abu Dabhi Location -->
-		<div id="location">
+		<section id="location">
 			<div class="location-title">
 				<h2>Abu Dhabi</h2>
 			</div>
 
 			<div class="location-image">
-				 <img src="img/centre.jpg" alt="" style="width:100%">
+				 <img src="img/abu_map.jpg" alt="" style="width:100%">
 			</div>
 
 			<div class="location-description">
@@ -60,39 +61,286 @@
 						by Jessica Clark, 26/08/2016
 					</p>
 			</div>
-		</div>
+		</section>
 		<!--End Abu Dabhi Location-->
-
 		<hr class="division">
 
+
 		<!--Galery Abu Dhabi-->
-		<div class="galery">
-			<h4>Stunning Images</h4>
+		<section class="slideshow-container">
 
-			<div class="images">
+		  <!-- Full-width images with number and caption text -->
+		  <div class="mySlides fade">
+		    <div class="numbertext">1 / 3</div>
+		    <img src="img/abu_night.jpg" style="width:100%">
+		    <div class="text">Caption Text</div>
+		  </div>
 
-				  <img src="landscape1.jpg" alt="" style="width:33%">
+		  <div class="mySlides fade">
+		    <div class="numbertext">2 / 3</div>
+		    <img src="img/abu1.jpg" style="width: 100%">
+		    <div class="text">Caption Two</div>
+		  </div>
 
+		  <div class="mySlides fade">
+		    <div class="numbertext">3 / 3</div>
+		    <img src="img/desert3.jpg" style="width:100%">
+		    <div class="text">Caption Three</div>
+		  </div>
 
+		  <!-- Next and previous buttons -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</section>
+		<br>
 
-				  <img src="landscape2.jpg" alt="" style="width:33%">
-
-
-
-				  <img src="centre.jpg" alt="" style="width:33%">
-
-			</div>
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
 		</div>
 		<!--End Galery Abu Dhabi-->
 
-		<hr>
-		</div>
+		<hr class="division">
 
+		<!-- Maldives Location -->
+		<div id="location">
+			<div class="location-title">
+				<h2>Maldives</h2>
+			</div>
+
+			<div class="location-image">
+				 <img src="img/Abu_Male.jpg" alt="" style="width:100%">
+			</div>
+
+			<div class="location-description">
+				<h4> A dream to live awaken </h4>
+					<p>
+						Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis aut rerum.
+					</p>
+					<p>
+						Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis aut rerum.
+					</p>
+					<p>
+						by Jessica Clark, 26/08/2016
+					</p>
+			</div>
+		</div>
+		<!--End of Maldives Location -->
+
+
+
+		<!--Maldives galery -->
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:480px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="img/img_gallery/img1.jpeg" />
+                <img data-u="thumb" src="img/img_gallery/img1.jpeg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/img_gallery/img2.jpeg" />
+                <img data-u="thumb" src="img/img_gallery/img2.jpeg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/img_gallery/img3.jpeg" />
+                <img data-u="thumb" src="img/img_gallery/img3.jpeg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/img_gallery/img4.jpeg" />
+                <img data-u="thumb" src="img/img_gallery/img4.jpeg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/img_gallery/img5.jpeg"  />
+                <img data-u="thumb" src="img/img_gallery/img5.jpeg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/img_gallery/img6.jpeg"/>
+                <img data-u="thumb" src="img/img_gallery/img6.jpeg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/img_gallery/img7.jpeg"/>
+                <img data-u="thumb" src="img/img_gallery/img7.jpeg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/img_gallery/img8.jpeg"  />
+                <img data-u="thumb" src="img/img_gallery/img8.jpeg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/img_gallery/img9.jpeg" />
+                <img data-u="thumb" src="img/img_gallery/img9.jpeg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/img_gallery/img10.jpeg" />
+                <img data-u="thumb" src="img/img_gallery/img10.jpeg" />
+            </div>
+        </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">web animation</a>
+        <!-- Thumbnail Navigator -->
+        <div data-u="thumbnavigator" class="jssort101" style="position:absolute;left:0px;bottom:0px;width:980px;height:100px;background-color:#000;" data-autocenter="1" data-scale-bottom="0.75">
+            <div data-u="slides">
+                <div data-u="prototype" class="p" style="width:190px;height:90px;">
+                    <div data-u="thumbnailtemplate" class="t"></div>
+                    <svg viewbox="0 0 16000 16000" class="cv">
+                        <circle class="a" cx="8000" cy="8000" r="3238.1"></circle>
+                        <line class="a" x1="6190.5" y1="8000" x2="9809.5" y2="8000"></line>
+                        <line class="a" x1="8000" y1="9809.5" x2="8000" y2="6190.5"></line>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora106" style="width:55px;height:55px;top:162px;left:30px;" data-scale="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+                <polyline class="a" points="7930.4,5495.7 5426.1,8000 7930.4,10504.3 "></polyline>
+                <line class="a" x1="10573.9" y1="8000" x2="5426.1" y2="8000"></line>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora106" style="width:55px;height:55px;top:162px;right:30px;" data-scale="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+                <polyline class="a" points="8069.6,5495.7 10573.9,8000 8069.6,10504.3 "></polyline>
+                <line class="a" x1="5426.1" y1="8000" x2="10573.9" y2="8000"></line>
+            </svg>
+        </div>
+    </div>
+
+
+
+	<!-- end of container -->
+	</div>
 		<footer div class="footer-copyright">
 			© 2020 Copyright
 			<a href="#">Mytrips.com</a>
 		</footer>
 
+		<script>
+
+			//navbar
+			var nav = document.getElementById('nave')
+			window.onscroll = function(){
+				if(window.pageYOffset > 435) {
+					nave.style.background = "rgba(50, 186, 207, 1)";
+				} else {
+					nave.style.background = "transparent";
+					nave.style.boxShadow = "none"
+				}
+			}
+
+			//image gallery abu dhabi
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			// Next/previous controls
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+			      slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			      dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " active";
+			}
+		</script>
+		<script>
+			//Image Gallery Maldives
+		    <script src="js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
+    		<script type="text/javascript">
+        	window.jssor_1_slider_init = function() {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:800,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $SpacingX: 5,
+                $SpacingY: 5
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+
+		</script>
+	    <script type="text/javascript">jssor_1_slider_init();
+    </script>
 
 </body>
 </html>
