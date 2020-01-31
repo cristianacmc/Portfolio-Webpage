@@ -21,7 +21,7 @@ body {
 #intro h1 {
 	font-family: 'Kalam', cursive;
 	font-size: 3.2rem;
-	color: rgba(250,255,7,1);
+	color: #ff07c8f0;
 	opacity: 0.8;
 	margin-bottom: 0;
 	/*color: #d72eff91;*/
@@ -30,7 +30,7 @@ body {
 #intro p {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.5rem;
-	color: rgba(250,255,7,1);
+	color: #ff07c8f0;
 	text-align: center;
 	margin-bottom: 23px;
 
