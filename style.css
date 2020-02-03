@@ -19,21 +19,21 @@ body {
 
 
 #intro h1 {
-	font-family: 'Kalam', cursive;
-	font-size: 3.2rem;
-	color: #ff07c8f0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.5rem;
+	color: #fff;
 	opacity: 0.8;
 	margin-bottom: 0;
-	/*color: #d72eff91;*/
+	text-shadow: 3px 3px 3px #000;
 }
 
 #intro p {
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.5rem;
-	color: #ff07c8f0;
+	font-size: 1.2rem;
+	color: #fff;
+	text-shadow: 3px 3px 3px #000;
 	text-align: center;
 	margin-bottom: 23px;
-
 }
 
 a {
@@ -44,6 +44,11 @@ a {
 h2 {
 	font-size: 1.5rem;
 	text-align: center;
+	color: #787878;
+}
+
+p {
+	color: #555;
 }
 
 
@@ -60,6 +65,7 @@ body {
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 	padding: 20px 25px 25px 0;
 	text-align: right;
+	display: inline-block;
 }
 
 .fixed-top  {
@@ -70,15 +76,19 @@ body {
 	transition: .5s;
 }
 
-.nav-link{
+.nav-link {
 	font-size: 1.2rem;
 	transition: .35s;
 	color: #fff;
-	display: inline-block;
 	padding-right: 0.5rem;
 	padding-left: .5rem;
 	cursor: pointer;
 	border-radius: 5px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.navbar .icon {
+  display: none;
 }
 
 
@@ -110,14 +120,15 @@ body {
 
 #introduction h2 {
 	font-family: 'Roboto', sans-serif;
-	color: #32BACF;
+	color: #787878;;
 }
 
 #introduction p {
 	font-family: 'Roboto', sans-serif;
-	color: #9e9e9e;
-	justify-content: center;
-	margin-bottom: 24px;
+	color: #555;
+	text-align: center;
+	margin: 0 auto 24px auto;
+	width: 70%;
 }
 
 
@@ -165,6 +176,7 @@ body {
 	color: black;
 	font-size: 1.5rem;
 	margin-bottom: 16px;
+	color: #117262;
 }
 
 /* galery */
@@ -321,6 +333,52 @@ body {
 	text-decoration: none;
 }
 
-@media (min-width: 300px){
+@media only screen and (max-width: 599px){
+/*.navbar a:not(:first-child) {display: none;}
+  	.navbar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: right;
+    display: block;
+    text-align: right;
+  }*/
+
+  .container {
+  	max-width: 600px;
+  	margin-left: 10vp;
+  	margin-right: 10vp;
+  	padding: 10px;
+  }
+
+  #introduction h2{
+
+  }
+
+  #introduction p{
+  	margin-left: auto;
+  	margin-right: auto;
+  	padding-right: 20px;
+
+  }
+}
+
+@media screen and (min-width: 600px){
+
+}
+
+@media screen and (min-width: 900px){
+
+}
+
+@media screen and (min-width: 1200px ){
 
 }
