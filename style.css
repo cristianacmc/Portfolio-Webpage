@@ -49,6 +49,8 @@ h2 {
 
 p {
 	color: #555;
+	font-size: 1em;
+	line-height: 1.5;
 }
 
 
@@ -128,7 +130,6 @@ body {
 	color: #555;
 	text-align: center;
 	margin: 0 auto 24px auto;
-	width: 70%;
 }
 
 
@@ -141,7 +142,7 @@ body {
 
 /* location */
 
-#location {
+#location-abu {
 	font-family: "Roboto",sans-serif;
     font-weight: 300;
 	margin: 15px 0 15px 0;
@@ -324,7 +325,7 @@ body {
 	font-size: 14px;
 	text-align: center;
 	color: rgba(255,255,255,0.6);
-	background-color: #1c2331;
+	background-color: #117262;
 	padding: 1rem 0 1rem 0;
 }
 
@@ -334,29 +335,13 @@ body {
 }
 
 @media only screen and (max-width: 599px){
-/*.navbar a:not(:first-child) {display: none;}
-  	.navbar a.icon {
-    float: right;
-    display: block;
-  }
-
-  .navbar.responsive {position: relative;}
-  .navbar.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: right;
-    display: block;
-    text-align: right;
-  }*/
-
   .container {
-  	max-width: 600px;
-  	margin-left: 10vp;
-  	margin-right: 10vp;
-  	padding: 10px;
+  	max-width: 100%;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	margin-left: 10px;
+  	margin-right: 15px;
   }
 
   #introduction h2{
@@ -369,6 +354,27 @@ body {
   	padding-right: 20px;
 
   }
+
+  #location-abu {
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	margin: 0 1vw 0 1vw;
+  }
+
+  .location-image img {
+  	margin-top: 0px;
+  }
+
+  .location-title h2{
+  	margin: 0;
+  }
+
+  .location-description h4, p{
+  	text-align: center;
+
+  }
+
 }
 
 @media screen and (min-width: 600px){
