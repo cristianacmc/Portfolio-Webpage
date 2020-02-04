@@ -17,7 +17,6 @@ body {
 
 /* Typography */
 
-
 #intro h1 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 2.5rem;
@@ -94,7 +93,6 @@ body {
 }
 
 
-
 #intro{
 	background-image: url("img/hero1.jpeg");
 	background-size: cover;
@@ -132,6 +130,43 @@ body {
 	margin: 0 auto 24px auto;
 }
 
+.intro-gallery {
+	display: flex;
+}
+
+/*gallery all images */
+
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height:auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 
 .division {
 	margin-top: 3rem;
@@ -146,31 +181,37 @@ body {
 	font-family: "Roboto",sans-serif;
     font-weight: 300;
 	margin: 15px 0 15px 0;
-	display: grid;
-	grid-template-rows: .5fr 2fr;
+	display: flex;
+	flex-direction: column;
+	/*grid-template-rows: .5fr 2fr;
 	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 1.8rem;
+	grid-column-gap: 1.8rem;*/
+}
+
+.loc-description {
+	display: flex;
+	justify-content: space-between;
 }
 
 .location-title {
 	font-size: 3rem;
 	color: #32bacf;
-	margin-bottom: 48px;
-	grid-column: 1/3;
+	margin-bottom: 1em;
 	justify-content: center;
 }
 
+.location-image {
+	margin-right: 1rem;
+}
+
 .location-image img{
-	grid-column: 1/2;
-	grid-row: 2/3;
-	width: 100%;
+	max-width: 100%;
 	margin-top: 40px;
 	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .location-description {
-	grid-column: 2/3 ;
-	grid-row: 2/3;
+	margin-left: 1rem;
 }
 
 .location-description h4 {
@@ -180,7 +221,7 @@ body {
 	color: #117262;
 }
 
-/* galery */
+/* galery abu dhabi */
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -362,6 +403,12 @@ body {
   	margin: 0 1vw 0 1vw;
   }
 
+  .loc-description {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
   .location-image img {
   	margin-top: 0px;
   }
@@ -375,13 +422,23 @@ body {
 
   }
 
+   .responsive {
+    width: 100%;
+  }
+
+.intro-gallery{
+	display: flex;
+	flex-direction: column;
+ }
 }
 
 @media screen and (min-width: 600px){
 
+
 }
 
 @media screen and (min-width: 900px){
+
 
 }
 
