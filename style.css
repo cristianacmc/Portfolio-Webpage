@@ -65,8 +65,9 @@ body {
 	font-weight: 300;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 	padding: 20px 25px 25px 0;
-	text-align: right;
+	text-align: center;
 	display: inline-block;
+	opacity: .94;
 }
 
 .fixed-top  {
@@ -74,17 +75,21 @@ body {
 	top: 0;
 	right: 0;
 	left: 0;
-	transition: .5s;
+	transition:.5s;
 }
 
 .nav-link {
-	font-size: 1.2rem;
+	font-size: 11px;
 	transition: .35s;
-	color: #fff;
+	color: #000;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 	padding-right: 0.5rem;
 	padding-left: .5rem;
 	cursor: pointer;
 	border-radius: 5px;
+	line-height: 38px;
+	padding: 0 1rem 0 1rem;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -111,7 +116,6 @@ body {
 	flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 
@@ -200,11 +204,8 @@ div.desc {
 	justify-content: center;
 }
 
-.location-image {
+.location-image img {
 	margin-right: 1rem;
-}
-
-.location-image img{
 	max-width: 100%;
 	margin-top: 40px;
 	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -220,159 +221,56 @@ div.desc {
 	margin-bottom: 16px;
 	color: #117262;
 }
+/* location malives */
+#location-mald {
+	margin-bottom: 3rem;
+}
+
+.location-mald-image img{
+	float: left;
+	margin-right: 2rem;
+}
+
+.location-mald-image img {
+	max-width: 100%;
+	margin-top: 40px;
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.location-description-mald h4 {
+	display: inline-block;
+	color: black;
+	font-size: 1.5rem;
+	margin-bottom: 16px;
+	color: #117262;
+}
 
 /* galery abu dhabi */
-* {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-.mySlides img {
-	max-height: 393px;
-}
 
 
 /* Image Gallery Maldives */
-/*jssor slider loading skin spin css*/
-.jssorl-009-spin img {
-    animation-name: jssorl-009-spin;
-    animation-duration: 1.6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
 
-@keyframes jssorl-009-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
-/*jssor slider arrow skin 106 css*/
-.jssora106 {display:block;position:absolute;cursor:pointer;}
-.jssora106 .c {fill:#fff;opacity:.3;}
-.jssora106 .a {fill:none;stroke:#000;stroke-width:350;stroke-miterlimit:10;}
-.jssora106:hover .c {opacity:.5;}
-.jssora106:hover .a {opacity:.8;}
-.jssora106.jssora106dn .c {opacity:.2;}
-.jssora106.jssora106dn .a {opacity:1;}
-.jssora106.jssora106ds {opacity:.3;pointer-events:none;}
-
-/*jssor slider thumbnail skin 101 css*/
-.jssort101 .p {position: absolute;top:0;left:0;box-sizing:border-box;background:#000;}
-.jssort101 .p .cv {position:relative;top:0;left:0;width:100%;height:100%;border:2px solid #000;box-sizing:border-box;z-index:1;}
-.jssort101 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;visibility:hidden;}
-.jssort101 .p:hover .cv, .jssort101 .p.pdn .cv {border:none;border-color:transparent;}
-.jssort101 .p:hover{padding:2px;}
-.jssort101 .p:hover .cv {background-color:rgba(0,0,0,6);opacity:.35;}
-.jssort101 .p:hover.pdn{padding:0;}
-.jssort101 .p:hover.pdn .cv {border:2px solid #fff;background:none;opacity:.35;}
-.jssort101 .pav .cv {border-color:#fff;opacity:.35;}
-.jssort101 .pav .a, .jssort101 .p:hover .a {visibility:visible;}
-.jssort101 .t {position:absolute;top:0;left:0;width:100%;height:100%;border:none;opacity:.6;}
-.jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
 
 
 
 .footer-copyright {
-	font-size: 14px;
-	text-align: center;
-	color: rgba(255,255,255,0.6);
-	background-color: #117262;
+	font-size: 11px;
+	text-align: left;
+	color: #fff;
+	background-color: #111;
 	padding: 1rem 0 1rem 0;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding-left: 2rem;
 }
 
 .footer-copyright a {
 	color: #fff;
+	text-align: right;
 	text-decoration: none;
+	letter-spacing: 2px;
 }
 
 @media only screen and (max-width: 599px){
